@@ -9,12 +9,37 @@
           
         </ion-label>
       </div>
-      <div></div>
-    </ion-content>
-  </ion-menu>
+      <div class="action-sheet-button">
+        <ion-button>
+          <ion-icon slot="start" name="add"></ion-icon>
+          Opcion uno
+        </ion-button>
+      </div>
 
-
-
-
-
-</ion-app>
+      <ion-list class="menu-items" lines="none">
+        <ion-item>
+          <ion-icon name="pie-chart-outline"></ion-icon>Dashboard
+        </ion-item>
+        <ion-item>
+          <ion-icon name="browners-outline"></ion-icon>Dashboard
+        </ion-item>
+        <ion-item class="active">
+          <ion-icon name="flash-outline"></ion-icon>Dashboard
+        </ion-item>
+        <ion-item>
+          <ion-icon name="chat-bubble-ellipse-outline"></ion-icon>Dashboard
+        </ion-item>
+        <ion-item>
+          <ion-icon name="heart-outline"></ion-icon>Promociones
+        </ion-item>
+        <ion-item>
+        | <ion-icon name="pie-chart-outline"></ion-icon>Repite Orden
+        </ion-item>
+        <ion-item>
+          <ion-icon name="exit-outline"></ion-icon>Logout
+        </ion-item>
+        </ion-list>
+      </ion-content>
+    </ion-menu>
+        <ion-router-outlet id="main"></ion-router-outlet>
+      </ion-app>
